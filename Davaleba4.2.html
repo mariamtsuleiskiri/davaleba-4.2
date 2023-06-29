@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <style>
+            table, th, td{ border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;}
+            ::placeholder{font-size: larger; color: black;}
+            input{border: 0.5px solid black; padding: 2px;}
+            select{border: 0.5px solid black;}
+            div {display: flex;}
+            button{border: 0.5px solid black; background-color: white;}
+        </style>
+        <table>
+            <tr>
+                <th colspan="1">Control Type</th>
+                <th colspan="1">Data</th>
+                <th colspan="1">Control</th>
+            </tr>
+            <tr>
+                <td>Test Box</td>
+                <td>Name:</td>
+                <td><input type="Enter name" name="Enter name" placeholder="Enter name" size="27"><br/></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>Password:</td>
+                <td><input type="password" name="password" size="27" /><br/>
+            </tr>
+            <tr>
+                <td>Text area</td>
+                <td>Address:</td>
+                <td><textarea name="message" rows="4" cols="25">Enter address
+                </textarea></td>
+            </tr>
+            <tr>
+                <td>Drop down list:</td>
+                <td>Area:</td>
+                <td><select name="Center">
+                    <option value="center">Center</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Check box</td>
+                <td>Hobbies:</td>
+                <td>
+                    <input type="checkbox" name="Sport" value="Sport" />Sport<br />
+                    <input type="checkbox" name="Reading" value="Reading" />Reading <br />
+                    <input type="checkbox" name="T.V" value="T.V." />T.V.<br />
+                    <input type="checkbox" name="Internet" value="Internet" />Internet
+                </td>
+            </tr>
+            <tr>
+                <td>Radio Buttons</td>
+                <td>Gender:</td>
+                <td>
+                    <fieldset style="width: 250px;border: 2px solid black;">
+                        <legend>Gender selection</legend>
+                        <input type="radio" name="gender" value="Male" checked/>Male <br />
+                        <input type="radio" name="gender" value="Female"/>Female
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>File upload</td>
+                <td>Your image:</td>
+                <td>
+                    <form action="/action_page.php">
+                    <input type="file" id="myFile" name="filename" style="border: none;">
+                  </form>
+                </td>
+
+            </tr>
+            <tr>
+                <td>Buttons</td>
+                <td>Actions:</td>
+                <td>
+                    <div class="container">
+                        <button type="button">Submit</button> 
+                        &nbsp;&nbsp;&nbsp;
+                        <button type="button">Reset</button>
+                    </div>
+                </td>
+            
+            </tr>
+        </table>
+    </body>
+</html>
